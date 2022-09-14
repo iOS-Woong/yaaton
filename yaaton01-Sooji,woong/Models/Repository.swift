@@ -9,7 +9,7 @@ import Foundation
 
 final class Repository {
     
-    private let apiKey = "t_c2b23e14_49226j24_bcb36cj6e1t9"
+    private let apiKey = "ber0tt041r1c2ct25j510t4bct331jpo"
     private let urlString = "https://open.jejudatahub.net/api/proxy/888tDaaDaat91181b7Db79811181tDaa/"
     
     func fetchData(completion: @escaping (Entity) -> ()) {
