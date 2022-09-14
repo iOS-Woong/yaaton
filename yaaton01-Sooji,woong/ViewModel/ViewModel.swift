@@ -11,13 +11,9 @@ final class ViewModel {
     
     private let service = Service()
     
-    var currentData = [Entity.Data]()
-    
-    func reload(onComplete: @escaping (Entity) -> ()) {
-        
-        service.fetchNow { entity in
-            self.currentData = entity.data
-            onComplete(entity)
+    func reload(onComplete: @escaping ([CourseModel]) -> ()) {
+        service.fetchNow { data in
+            onComplete(data)
         }
     }
 }

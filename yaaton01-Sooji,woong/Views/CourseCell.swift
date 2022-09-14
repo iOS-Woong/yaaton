@@ -19,9 +19,22 @@ final class CourseCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setImageViewAttributes()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
+    }
+    
+    private func setImageViewAttributes() {
+        startPointImageView.clipsToBounds = true
+        endPointImageView.clipsToBounds = true
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        startPointImageView.layer.cornerRadius = startPointImageView.frame.width / 2
+        endPointImageView.layer.cornerRadius = endPointImageView.frame.width / 2
     }
 }
