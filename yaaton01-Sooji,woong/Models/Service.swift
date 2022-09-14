@@ -32,33 +32,32 @@ final class Service {
             model.startPoint = $0.startPoint
             model.endPoint = $0.endPoint
             model.distance = $0.distance
-            model.startPointImage?.image = UIImage(named: "seoguipoNature.png")
             
             switch $0.courseName {
             case "산림휴양길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple.jpg")
+                model.startPointImage = UIImage(named: "seoguipoNature")
+                model.endPointImage = UIImage(named: "muoBeopjeongTemple")
             case "절물(조릿대)길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "saryuniForestLoad")
+                model.endPointImage = UIImage(named: "jeolmulNature")
             case "시험림길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "saryuniForestLoad")
+                model.endPointImage = UIImage(named: "sooakLoad")
             case "돌오름길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "borimFarm")
+                model.endPointImage = UIImage(named: "georinDear")
             case "천아숲길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "cheonaForest")
+                model.endPointImage = UIImage(named: "borimFarm")
             case "동백길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "muoBeopjeongTemple")
+                model.endPointImage = UIImage(named: "donnaeko")
             case "사려니숲길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "saryuniForestLoad")
+                model.endPointImage = UIImage(named: "saryuniOrem")
             case "수악길":
-                model.startPointImage?.image = UIImage(named: "seoguipoNature")
-                model.endPointImage?.image = UIImage(named: "muoBeopjeongTemple")
+                model.startPointImage = UIImage(named: "donnaeko")
+                model.endPointImage = UIImage(named: "saryuniOrem")
             default:
                 break
             }

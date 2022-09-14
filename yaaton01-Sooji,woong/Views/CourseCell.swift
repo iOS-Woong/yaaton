@@ -33,7 +33,7 @@ final class CourseCell: UITableViewCell {
     private func setImageViewAttributes() {
         [startPointImageView, endPointImageView].forEach {
             $0?.clipsToBounds = true
-            $0?.layer.borderWidth = 0.1
+            $0?.layer.borderWidth = 0.4
             $0?.layer.borderColor = UIColor.darkGray.cgColor
             $0?.backgroundColor = .systemGreen
         }

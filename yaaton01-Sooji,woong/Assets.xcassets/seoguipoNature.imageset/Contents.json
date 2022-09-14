@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "seoguipoNature.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "seoguipoNature.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

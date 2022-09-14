@@ -8,9 +8,9 @@
 import UIKit
 
 struct CourseModel {
-    var startPointImage: UIImageView?
-    var endPointImage: UIImageView?
-    var pointImage: UIImageView?
+    var startPointImage: UIImage?
+    var endPointImage: UIImage?
+    var pointImage: UIImage?
     var courseName: String?
     var startPoint: String?
     var endPoint: String?

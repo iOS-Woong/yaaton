@@ -20,8 +20,11 @@ extension CourseListViewController: UITableViewDataSource {
             let cellData = data[indexPath.row]
             
             DispatchQueue.main.async {
-                cell.startPointImageView.image = UIImage(named: "jeju")
-                cell.endPointImageView.image = UIImage(named: "jeju")
+//                cell.startPointImageView.image = UIImage(named: "jeju")
+//                cell.endPointImageView.image = UIImage(named: "jeju")
+                
+                cell.startPointImageView.image = cellData.startPointImage
+                cell.endPointImageView.image = cellData.endPointImage
                 cell.courseName.text = cellData.courseName
                 cell.startPoint.text = cellData.startPoint
                 cell.endPoint.text = cellData.endPoint
