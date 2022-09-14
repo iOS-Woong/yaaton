@@ -27,7 +27,7 @@ extension CourseListViewController: UITableViewDataSource {
                 cell.endPoint.text = cellData.endPoint
                 
                 guard let distance = cellData.distance else { return }
-                cell.distance.text = "\(distance)KM"
+                cell.distance.text = "\(distance)km"
             }
         }
         return cell

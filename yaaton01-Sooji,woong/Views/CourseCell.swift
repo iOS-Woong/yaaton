@@ -19,26 +19,30 @@ final class CourseCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setImageViewAttributes()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setImageViewAttributes()
     }
     
     private func setImageViewAttributes() {
-        startPointImageView.clipsToBounds = true
-        startPointImageView.layer.borderWidth = 0.1
-        startPointImageView.layer.borderColor = UIColor.darkGray.cgColor
-        endPointImageView.clipsToBounds = true
-        endPointImageView.layer.borderWidth = 0.1
-        endPointImageView.layer.borderColor = UIColor.darkGray.cgColor
+        [startPointImageView, endPointImageView].forEach {
+            $0?.clipsToBounds = true
+            $0?.layer.borderWidth = 0.1
+            $0?.layer.borderColor = UIColor.darkGray.cgColor
+            $0?.backgroundColor = .systemGreen
+        }
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        startPointImageView.layer.cornerRadius = startPointImageView.frame.width / 2
-        endPointImageView.layer.cornerRadius = endPointImageView.frame.width / 2
+        [startPointImageView, endPointImageView].forEach {
+            $0?.layer.cornerRadius = ($0?.frame.width)! / 2
+        }
     }
 }
