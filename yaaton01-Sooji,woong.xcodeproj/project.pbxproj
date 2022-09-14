@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		D2B22B7F28D1523000967E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B22B7E28D1523000967E24 /* AppDelegate.swift */; };
 		D2B22B8128D1523000967E24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B22B8028D1523000967E24 /* SceneDelegate.swift */; };
-		D2B22B8328D1523000967E24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B22B8228D1523000967E24 /* ViewController.swift */; };
+		D2B22B8328D1523000967E24 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B22B8228D1523000967E24 /* CourseListViewController.swift */; };
 		D2B22B8628D1523000967E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B22B8428D1523000967E24 /* Main.storyboard */; };
 		D2B22B8828D1523300967E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B22B8728D1523300967E24 /* Assets.xcassets */; };
 		D2B22B8B28D1523300967E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B22B8928D1523300967E24 /* LaunchScreen.storyboard */; };
+		FF75DE2D28D1592E0048D47B /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE2C28D1592E0048D47B /* Entity.swift */; };
+		FF75DE2F28D159450048D47B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE2E28D159450048D47B /* Repository.swift */; };
+		FF75DE3128D159490048D47B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3028D159490048D47B /* Service.swift */; };
+		FF75DE3328D159710048D47B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3228D159710048D47B /* ViewModel.swift */; };
+		FF75DE3528D165E40048D47B /* CourseListViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3428D165E40048D47B /* CourseListViewController + Ext.swift */; };
+		FF75DE3728D166920048D47B /* CourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3628D166920048D47B /* CourceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2B22B7B28D1523000967E24 /* yaaton01-Sooji,woong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yaaton01-Sooji,woong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B22B7E28D1523000967E24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2B22B8028D1523000967E24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2B22B8228D1523000967E24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2B22B8228D1523000967E24 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
 		D2B22B8528D1523000967E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2B22B8728D1523300967E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2B22B8A28D1523300967E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2B22B8C28D1523300967E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF75DE2C28D1592E0048D47B /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		FF75DE2E28D159450048D47B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FF75DE3028D159490048D47B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		FF75DE3228D159710048D47B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FF75DE3428D165E40048D47B /* CourseListViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseListViewController + Ext.swift"; sourceTree = "<group>"; };
+		FF75DE3628D166920048D47B /* CourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,51 @@
 			children = (
 				D2B22B7E28D1523000967E24 /* AppDelegate.swift */,
 				D2B22B8028D1523000967E24 /* SceneDelegate.swift */,
-				D2B22B8228D1523000967E24 /* ViewController.swift */,
+				FF75DE2828D158F00048D47B /* Models */,
+				FF75DE2A28D158FD0048D47B /* Views */,
+				FF75DE2B28D159010048D47B /* ViewModel */,
+				FF75DE2928D158F60048D47B /* Controllers */,
 				D2B22B8428D1523000967E24 /* Main.storyboard */,
 				D2B22B8728D1523300967E24 /* Assets.xcassets */,
 				D2B22B8928D1523300967E24 /* LaunchScreen.storyboard */,
 				D2B22B8C28D1523300967E24 /* Info.plist */,
 			);
 			path = "yaaton01-Sooji,woong";
+			sourceTree = "<group>";
+		};
+		FF75DE2828D158F00048D47B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF75DE2C28D1592E0048D47B /* Entity.swift */,
+				FF75DE2E28D159450048D47B /* Repository.swift */,
+				FF75DE3028D159490048D47B /* Service.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF75DE2928D158F60048D47B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2B22B8228D1523000967E24 /* CourseListViewController.swift */,
+				FF75DE3428D165E40048D47B /* CourseListViewController + Ext.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF75DE2A28D158FD0048D47B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF75DE3628D166920048D47B /* CourceCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF75DE2B28D159010048D47B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF75DE3228D159710048D47B /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B22B8328D1523000967E24 /* ViewController.swift in Sources */,
+				FF75DE2D28D1592E0048D47B /* Entity.swift in Sources */,
+				D2B22B8328D1523000967E24 /* CourseListViewController.swift in Sources */,
+				FF75DE2F28D159450048D47B /* Repository.swift in Sources */,
+				FF75DE3728D166920048D47B /* CourceCell.swift in Sources */,
 				D2B22B7F28D1523000967E24 /* AppDelegate.swift in Sources */,
 				D2B22B8128D1523000967E24 /* SceneDelegate.swift in Sources */,
+				FF75DE3128D159490048D47B /* Service.swift in Sources */,
+				FF75DE3328D159710048D47B /* ViewModel.swift in Sources */,
+				FF75DE3528D165E40048D47B /* CourseListViewController + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
