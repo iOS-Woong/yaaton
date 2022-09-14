@@ -7,7 +7,6 @@
 
 import Foundation
 
-// api 파싱할때 필요한 서버모델
 struct Entity: Decodable {
         
         let data: [Data]

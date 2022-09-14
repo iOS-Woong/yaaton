@@ -14,7 +14,7 @@ extension CourseListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(CourseCell.self)" , for: indexPath) as! CourseCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell" , for: indexPath) as! CourseCell
         
         viewModel.reload { entity in
             let cellData = entity.data[indexPath.row]
@@ -23,10 +23,9 @@ extension CourseListViewController: UITableViewDataSource {
                 cell.courseName.text = cellData.courseName
                 cell.startPoint.text = cellData.startPoint
                 cell.endPoint.text = cellData.endPoint
-                cell.distance.text = "\(cellData.distance)"
+                cell.distance.text = "\(cellData.distance)KM"
             }
         }
-        
         return cell
     }
 }

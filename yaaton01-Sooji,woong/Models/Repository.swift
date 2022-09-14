@@ -7,7 +7,6 @@
 
 import Foundation
 
-// 서버모델을 가지고 파싱할 객체
 final class Repository {
     
     private let apiKey = "t_c2b23e14_49226j24_bcb36cj6e1t9"

@@ -18,7 +18,8 @@
 		FF75DE3128D159490048D47B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3028D159490048D47B /* Service.swift */; };
 		FF75DE3328D159710048D47B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3228D159710048D47B /* ViewModel.swift */; };
 		FF75DE3528D165E40048D47B /* CourseListViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3428D165E40048D47B /* CourseListViewController + Ext.swift */; };
-		FF75DE3728D166920048D47B /* CourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75DE3628D166920048D47B /* CourceCell.swift */; };
+		FF8F449328D18E5D00E1193E /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8F449228D18E5D00E1193E /* CourseCell.swift */; };
+		FF8F449528D190E200E1193E /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8F449428D190E200E1193E /* UILabel + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,8 @@
 		FF75DE3028D159490048D47B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		FF75DE3228D159710048D47B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FF75DE3428D165E40048D47B /* CourseListViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseListViewController + Ext.swift"; sourceTree = "<group>"; };
-		FF75DE3628D166920048D47B /* CourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourceCell.swift; sourceTree = "<group>"; };
+		FF8F449228D18E5D00E1193E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		FF8F449428D190E200E1193E /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 		FF75DE2A28D158FD0048D47B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF75DE3628D166920048D47B /* CourceCell.swift */,
+				FF8F449228D18E5D00E1193E /* CourseCell.swift */,
+				FF8F449428D190E200E1193E /* UILabel + Ext.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,11 +194,12 @@
 				FF75DE2D28D1592E0048D47B /* Entity.swift in Sources */,
 				D2B22B8328D1523000967E24 /* CourseListViewController.swift in Sources */,
 				FF75DE2F28D159450048D47B /* Repository.swift in Sources */,
-				FF75DE3728D166920048D47B /* CourceCell.swift in Sources */,
+				FF8F449328D18E5D00E1193E /* CourseCell.swift in Sources */,
 				D2B22B7F28D1523000967E24 /* AppDelegate.swift in Sources */,
 				D2B22B8128D1523000967E24 /* SceneDelegate.swift in Sources */,
 				FF75DE3128D159490048D47B /* Service.swift in Sources */,
 				FF75DE3328D159710048D47B /* ViewModel.swift in Sources */,
+				FF8F449528D190E200E1193E /* UILabel + Ext.swift in Sources */,
 				FF75DE3528D165E40048D47B /* CourseListViewController + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

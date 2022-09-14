@@ -7,7 +7,6 @@
 
 import Foundation
 
-// 로직 담당
 final class Service {
     
     private let repository = Repository()
