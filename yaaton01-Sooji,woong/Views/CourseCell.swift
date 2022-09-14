@@ -29,7 +29,11 @@ final class CourseCell: UITableViewCell {
     
     private func setImageViewAttributes() {
         startPointImageView.clipsToBounds = true
+        startPointImageView.layer.borderWidth = 0.1
+        startPointImageView.layer.borderColor = UIColor.darkGray.cgColor
         endPointImageView.clipsToBounds = true
+        endPointImageView.layer.borderWidth = 0.1
+        endPointImageView.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     override func layoutSubviews() {
